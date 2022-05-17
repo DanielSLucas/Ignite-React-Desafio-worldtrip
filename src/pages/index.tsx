@@ -1,5 +1,13 @@
-import React from 'react';
+import { Flex } from '@chakra-ui/react';
+
+import { HomeBanner } from '../components/HomeBanner';
+import { TravelTypes } from '../components/TravelTypes';
 
 export default function Home() {
-  return <div>xD</div>;
+  return (
+    <Flex as="main" flex="1" direction="column">
+      <HomeBanner />
+      <TravelTypes />
+    </Flex>
+  );
 }
