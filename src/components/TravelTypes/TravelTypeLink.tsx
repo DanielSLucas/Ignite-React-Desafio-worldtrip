@@ -22,7 +22,14 @@ export function TravelTypeLink({
   if (isWideVersion) {
     return (
       <Link {...rest}>
-        <Flex as="a" direction="column" align="center" p="4" m="4">
+        <Flex
+          as="a"
+          cursor="pointer"
+          direction="column"
+          align="center"
+          p="4"
+          m="4"
+        >
           <Image src={img} width={85} height={85} alt={imgAlt} />
 
           <Text mt="6" color="dark.headings" fontWeight="semibold">
@@ -37,6 +44,7 @@ export function TravelTypeLink({
     <Link {...rest}>
       <Flex
         as="a"
+        cursor="pointer"
         direction={['row', 'row', 'column']}
         align="center"
         justify="center"
