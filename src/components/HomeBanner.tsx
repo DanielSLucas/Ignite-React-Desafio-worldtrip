@@ -9,7 +9,7 @@ export function HomeBanner() {
       bgRepeat="no-repeat"
       bgSize="cover"
       w="100%"
-      h={335}
+      h={[173, 335]}
       justify="center"
     >
       <Flex
@@ -21,12 +21,16 @@ export function HomeBanner() {
         justifyContent="space-between"
       >
         <Flex direction="column" justify="center">
-          <Heading color="light.headings">
+          <Heading
+            color="light.headings"
+            fontWeight="medium"
+            fontSize={['xl', '4xl']}
+          >
             5 Continentes,
             <br />
             infinitas possibilidades
           </Heading>
-          <Text color="light.info.500" maxW={450}>
+          <Text color="light.info.500" maxW={450} fontSize={['sm', 'xl']}>
             Chegou a hora de tirar do papel a viagem que você sempre sonhou.
           </Text>
         </Flex>

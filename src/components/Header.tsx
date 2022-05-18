@@ -1,13 +1,15 @@
 import { ChevronLeftIcon } from '@chakra-ui/icons';
 import { Flex, IconButton } from '@chakra-ui/react';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
+
+import logoImg from '../../public/logo.svg';
 
 export function Header() {
   const { asPath, back } = useRouter();
 
   return (
-    <Flex w="100%" h="24" justify="center">
+    <Flex w="100%" h={['12', '24']} justify="center">
       <Flex
         w="100%"
         maxW={1120}
@@ -26,12 +28,9 @@ export function Header() {
           <div />
         )}
 
-        <Image
-          src="/logo.svg"
-          width={184.06}
-          height={45.92}
-          alt="Worldtrip Logo"
-        />
+        <Flex position="relative" w={[135, 185]} h="100%" align="center">
+          <Image src={logoImg} alt="Worldtrip Logo" />
+        </Flex>
 
         <div />
       </Flex>

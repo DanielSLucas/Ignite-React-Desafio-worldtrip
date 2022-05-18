@@ -3,15 +3,15 @@ import { TravelTypeLink } from './TravelTypeLink';
 
 export function TravelTypes() {
   return (
-    <Flex as="section" w="100%" h={335} justify="center">
+    <Flex as="section" w="100%" h="fit-content" justify="center">
       <Flex
         flexWrap="wrap"
         w="100%"
         maxW={1120}
         h="100%"
-        p="8"
+        p={['4', '8']}
         align="center"
-        justifyContent="space-around"
+        justifyContent="space-evenly"
       >
         <TravelTypeLink
           img="/icons/cocktail.svg"
