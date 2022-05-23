@@ -14,7 +14,7 @@ export function Slider() {
           <Slide
             title="Europa"
             description="O continente mais antigo"
-            href="#"
+            href="/continente/Europa"
             imgUrl="https://images.unsplash.com/photo-1513026705753-bc3fffca8bf4?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470"
           />
         </SwiperSlide>
@@ -23,7 +23,7 @@ export function Slider() {
           <Slide
             title="América do Norte"
             description="O continente mais antigo"
-            href="#"
+            href="/continente/americaDoNorte"
             imgUrl="https://images.unsplash.com/photo-1581195177169-790ceff67d8a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470"
           />
         </SwiperSlide>
@@ -32,7 +32,7 @@ export function Slider() {
           <Slide
             title="América do Sul"
             description="O continente mais antigo"
-            href="#"
+            href="/continente/americaDoSul"
             imgUrl="https://images.unsplash.com/photo-1619546952812-520e98064a52?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471"
           />
         </SwiperSlide>
@@ -41,7 +41,7 @@ export function Slider() {
           <Slide
             title="Ásia"
             description="O continente mais antigo"
-            href="#"
+            href="/continente/asia"
             imgUrl="https://images.unsplash.com/photo-1503539680555-732099a55a56?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470"
           />
         </SwiperSlide>
@@ -50,7 +50,7 @@ export function Slider() {
           <Slide
             title="África"
             description="O continente mais antigo"
-            href="#"
+            href="/continente/africa"
             imgUrl="https://images.unsplash.com/photo-1614531341773-3bff8b7cb3fc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632"
           />
         </SwiperSlide>
@@ -59,7 +59,7 @@ export function Slider() {
           <Slide
             title="Oceania"
             description="O continente mais antigo"
-            href="#"
+            href="/continente/oceania"
             imgUrl="https://images.unsplash.com/photo-1589330273594-fade1ee91647?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470"
           />
         </SwiperSlide>
