@@ -11,33 +11,38 @@ interface SlideProps {
 export function Slide({ title, description, imgUrl, href }: SlideProps) {
   return (
     <Box bgImg={imgUrl} bgRepeat="no-repeat" bgSize="cover" bgPos="center">
-      <Link href={href}>
-        <Flex
-          as="a"
-          cursor="pointer"
-          flex="1"
-          h={450}
-          direction="column"
-          align="center"
-          justify="center"
-          bgColor="rgba(28, 20, 1, 0.35)"
-        >
-          <Heading
-            fontWeight="bold"
-            fontSize={['2xl', '5xl']}
-            color="light.headings"
+      <Flex
+        h={450}
+        direction="column"
+        align="center"
+        justify="center"
+        bgColor="rgba(28, 20, 1, 0.35)"
+      >
+        <Link href={href}>
+          <Flex
+            as="a"
+            cursor="pointer"
+            direction="column"
+            align="center"
+            justify="center"
           >
-            {title}
-          </Heading>
-          <Text
-            fontWeight="bold"
-            fontSize={['sm', '2xl']}
-            color="light.info.500"
-          >
-            {description}
-          </Text>
-        </Flex>
-      </Link>
+            <Heading
+              fontWeight="bold"
+              fontSize={['2xl', '5xl']}
+              color="light.headings"
+            >
+              {title}
+            </Heading>
+            <Text
+              fontWeight="bold"
+              fontSize={['sm', '2xl']}
+              color="light.info.500"
+            >
+              {description}
+            </Text>
+          </Flex>
+        </Link>
+      </Flex>
     </Box>
   );
 }
