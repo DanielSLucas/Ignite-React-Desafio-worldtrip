@@ -1,6 +1,7 @@
 import { Box, Flex, Text, useBreakpointValue } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link, { LinkProps } from 'next/link';
+import { useEffect, useState } from 'react';
 
 interface TravelTypeLinkProps extends LinkProps {
   img: string;
@@ -14,10 +15,13 @@ export function TravelTypeLink({
   text,
   ...rest
 }: TravelTypeLinkProps) {
+  const [mounted, setMounted] = useState(false);
   const isWideVersion = useBreakpointValue({
     base: false,
     sm: true,
   });
+
+  useEffect(() => setMounted(true), []);
 
   if (isWideVersion) {
     return (
@@ -30,7 +34,7 @@ export function TravelTypeLink({
           p="4"
           m="4"
         >
-          <Image src={img} width={85} height={85} alt={imgAlt} />
+          {mounted && <Image src={img} width={85} height={85} alt={imgAlt} />}
 
           <Text mt="6" color="dark.headings" fontWeight="semibold">
             {text}
@@ -50,7 +54,7 @@ export function TravelTypeLink({
         justify="center"
         p="4"
       >
-        <Box w="2" h="2" borderRadius="full" bg="highlight.500" />
+        {mounted && <Box w="2" h="2" borderRadius="full" bg="highlight.500" />}
 
         <Text ml="2" color="dark.headings" fontWeight="semibold">
           {text}

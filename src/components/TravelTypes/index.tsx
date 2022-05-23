@@ -10,8 +10,9 @@ export function TravelTypes() {
         maxW={1120}
         h="100%"
         p={['4', '8']}
+        mt={[0, '8']}
         align="center"
-        justifyContent="space-evenly"
+        justifyContent={['space-evenly', 'space-evenly', 'space-between']}
       >
         <TravelTypeLink
           img="/icons/cocktail.svg"

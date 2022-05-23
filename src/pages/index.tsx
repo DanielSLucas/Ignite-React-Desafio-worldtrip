@@ -6,7 +6,13 @@ import { TravelTypes } from '../components/TravelTypes';
 
 export default function Home() {
   return (
-    <Flex as="main" flex="1" direction="column">
+    <Flex
+      as="main"
+      h="fit-content"
+      w="100%"
+      direction="column"
+      overflowX="hidden"
+    >
       <HomeBanner />
       <TravelTypes />
 
@@ -21,7 +27,6 @@ export default function Home() {
         justify="center"
         textAlign="center"
         my="6"
-        overflow="hidden"
       >
         <Heading
           fontWeight="medium"

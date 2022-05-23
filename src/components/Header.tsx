@@ -9,7 +9,7 @@ export function Header() {
   const { asPath, back } = useRouter();
 
   return (
-    <Flex w="100%" h={['12', '24']} justify="center">
+    <Flex as="header" w="100%" h={['12', '20']} justify="center">
       <Flex
         w="100%"
         maxW={1120}

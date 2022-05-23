@@ -8,7 +8,13 @@ import '../styles/app.css';
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <Flex w="100vw" h="100vh" direction="column">
+      <Flex
+        w="100vw"
+        h="fit-content"
+        minH="100vh"
+        direction="column"
+        overflowX="hidden"
+      >
         <Header />
         <Component {...pageProps} />
       </Flex>
