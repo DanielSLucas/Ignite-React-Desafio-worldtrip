@@ -14,7 +14,7 @@ export function Slider() {
           <Slide
             title="Europa"
             description="O continente mais antigo"
-            href="/continente/Europa"
+            href="/continente/europa"
             imgUrl="https://images.unsplash.com/photo-1513026705753-bc3fffca8bf4?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470"
           />
         </SwiperSlide>
